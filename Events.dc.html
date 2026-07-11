@@ -16,6 +16,7 @@
   .disp{ font-family:var(--font-heading); font-weight:800; letter-spacing:-0.02em; margin:0; }
   .kick{ display:block; font-size:13px; line-height:1.1; letter-spacing:0.1em; text-transform:uppercase; color:var(--color-accent-700); }
   .srv-cal-wrap{ display:grid; grid-template-columns:1.3fr 1fr; gap:0; }
+  .srv-cal-wrap > * { min-width:0; }
   .cal-grid{ display:grid; grid-template-columns:repeat(7,1fr); border-left:1px solid var(--color-divider); border-top:1px solid var(--color-divider); }
   .cal-cell{ min-height:78px; padding:8px 10px; border-right:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider); font-size:13px; }
   .cal-head{ font-family:var(--font-heading); font-weight:800; font-size:11px; letter-spacing:0.06em; text-transform:uppercase; min-height:auto; padding:10px; color:color-mix(in srgb,var(--color-text) 60%,transparent); }
@@ -25,6 +26,7 @@
   .cal-holiday{ background:color-mix(in srgb,var(--color-text) 6%,transparent); }
   .cal-holiday .cal-num{ color:color-mix(in srgb,var(--color-text) 55%,transparent); }
   @media (max-width:860px){ .srv-cal-wrap{ grid-template-columns:1fr; } .srv-pad{ padding-left:24px !important; padding-right:24px !important; } .cal-cell{ min-height:56px; } }
+  @media (max-width:480px){ .cal-scroll{ overflow-x:auto; } .cal-grid{ min-width:480px; } }
 </style>
 </helmet>
 
@@ -46,6 +48,7 @@
         <h2 class="disp" style="font-size:24px;">Ashar 2083</h2>
         <span style="font-size:12px; color:color-mix(in srgb,var(--color-text) 55%,transparent);">June - July 2026</span>
       </div>
+      <div class="cal-scroll">
       <div class="cal-grid">
         <div class="cal-cell cal-head">Sun</div><div class="cal-cell cal-head">Mon</div><div class="cal-cell cal-head">Tue</div><div class="cal-cell cal-head">Wed</div><div class="cal-cell cal-head">Thu</div><div class="cal-cell cal-head">Fri</div><div class="cal-cell cal-head">Sat</div>
         <div class="cal-cell" style="background:var(--color-surface);"></div>
@@ -85,6 +88,7 @@
         <div class="cal-cell"><span class="cal-num">32</span></div>
         <div class="cal-cell" style="background:var(--color-surface);"></div>
         <div class="cal-cell" style="background:var(--color-surface);"></div>
+      </div>
       </div>
     </div>
 

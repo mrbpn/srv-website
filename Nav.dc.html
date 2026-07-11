@@ -13,11 +13,12 @@
 <style>
   .srv-nav a[aria-current='page'] { color: var(--color-accent); }
   .srv-nav a:hover { color: var(--color-accent); }
-  .srv-burger { display: none; }
+  .srv-nav .srv-links { display: flex; align-items: center; gap: 20px; }
+  .srv-nav .srv-burger { display: none !important; }
   @media (max-width: 900px) {
-    .srv-nav .srv-links { display: none; }
-    .srv-nav .srv-burger { display: inline-flex; }
-    .srv-nav .srv-admit { display: none; }
+    .srv-nav .srv-links { display: none !important; }
+    .srv-nav .srv-burger { display: inline-flex !important; }
+    .srv-nav .srv-admit { display: none !important; }
   }
 </style>
 </helmet>
@@ -27,7 +28,7 @@
     <img src="assets/logo.png" alt="Sahara Rastriya Vidhyalaya" style="height:44px; width:auto; display:block;">
     <span class="nav-brand" style="margin:0; line-height:1.05;">Sahara Rastriya Vidhyalaya<span style="display:block; font-size:10px; letter-spacing:0.14em; text-transform:uppercase; color:var(--color-accent-700); font-weight:600;">Admire · Approach · Achieve</span></span>
   </a>
-  <div class="srv-links" style="display:flex; align-items:center; gap:20px;">
+  <div class="srv-links">
     <a href="About.dc.html" aria-current="{{ curAbout }}">About</a>
     <a href="Academics.dc.html" aria-current="{{ curAcademics }}">Academics</a>
     <a href="Facilities.dc.html" aria-current="{{ curFacilities }}">Facilities</a>
