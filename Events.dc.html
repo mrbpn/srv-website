@@ -22,6 +22,8 @@
   .cal-ev{ background:var(--color-accent); color:var(--color-bg); }
   .cal-ev .cal-num{ color:var(--color-bg); }
   .cal-num{ font-family:var(--font-heading); font-weight:800; }
+  .cal-holiday{ background:color-mix(in srgb,var(--color-text) 6%,transparent); }
+  .cal-holiday .cal-num{ color:color-mix(in srgb,var(--color-text) 55%,transparent); }
   @media (max-width:860px){ .srv-cal-wrap{ grid-template-columns:1fr; } .srv-pad{ padding-left:24px !important; padding-right:24px !important; } .cal-cell{ min-height:56px; } }
 </style>
 </helmet>
@@ -41,41 +43,46 @@
   <section class="srv-cal-wrap srv-pad" style="max-width:1120px; margin:0 auto; padding:44px 56px;">
     <div class="srv-pad" style="padding-right:44px;">
       <div style="display:flex; align-items:baseline; justify-content:space-between; margin-bottom:18px;">
-        <h2 class="disp" style="font-size:24px;">Chaitra 2081</h2>
-        <span style="font-size:12px; color:color-mix(in srgb,var(--color-text) 55%,transparent);">Mar–Apr 2025</span>
+        <h2 class="disp" style="font-size:24px;">Ashar 2083</h2>
+        <span style="font-size:12px; color:color-mix(in srgb,var(--color-text) 55%,transparent);">June - July 2026</span>
       </div>
       <div class="cal-grid">
         <div class="cal-cell cal-head">Sun</div><div class="cal-cell cal-head">Mon</div><div class="cal-cell cal-head">Tue</div><div class="cal-cell cal-head">Wed</div><div class="cal-cell cal-head">Thu</div><div class="cal-cell cal-head">Fri</div><div class="cal-cell cal-head">Sat</div>
+        <div class="cal-cell" style="background:var(--color-surface);"></div>
         <div class="cal-cell"><span class="cal-num">1</span></div>
         <div class="cal-cell"><span class="cal-num">2</span></div>
         <div class="cal-cell"><span class="cal-num">3</span></div>
         <div class="cal-cell"><span class="cal-num">4</span></div>
         <div class="cal-cell"><span class="cal-num">5</span></div>
-        <div class="cal-cell"><span class="cal-num">6</span></div>
-        <div class="cal-cell"><span class="cal-num">7</span></div>
-        <div class="cal-cell cal-ev"><span class="cal-num">8</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Sports Day</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">6</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">7</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
+       <div class="cal-cell"><span class="cal-num">8</span></div>
         <div class="cal-cell"><span class="cal-num">9</span></div>
         <div class="cal-cell"><span class="cal-num">10</span></div>
         <div class="cal-cell"><span class="cal-num">11</span></div>
         <div class="cal-cell"><span class="cal-num">12</span></div>
-        <div class="cal-cell"><span class="cal-num">13</span></div>
-        <div class="cal-cell"><span class="cal-num">14</span></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">13</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">14</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
         <div class="cal-cell"><span class="cal-num">15</span></div>
-        <div class="cal-cell"><span class="cal-num">16</span></div>
+        <div class="cal-cell cal-ev"><span class="cal-num">16</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Portfolio Review Meeting</div></div>
+
         <div class="cal-cell"><span class="cal-num">17</span></div>
         <div class="cal-cell"><span class="cal-num">18</span></div>
         <div class="cal-cell"><span class="cal-num">19</span></div>
-        <div class="cal-cell"><span class="cal-num">20</span></div>
-        <div class="cal-cell cal-ev"><span class="cal-num">21</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Exhibition</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">20</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">21</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
         <div class="cal-cell"><span class="cal-num">22</span></div>
+       
         <div class="cal-cell"><span class="cal-num">23</span></div>
         <div class="cal-cell"><span class="cal-num">24</span></div>
         <div class="cal-cell"><span class="cal-num">25</span></div>
-        <div class="cal-cell cal-ev"><span class="cal-num">26</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Exams begin</div></div>
-        <div class="cal-cell"><span class="cal-num">27</span></div>
-        <div class="cal-cell"><span class="cal-num">28</span></div>
+        <div class="cal-cell cal-ev"><span class="cal-num">26</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Mock WorldCup  Final</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">27</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
+        <div class="cal-cell cal-holiday"><span class="cal-num">28</span><div style="font-size:10px; line-height:1.2; margin-top:4px;">Holiday</div></div>
         <div class="cal-cell"><span class="cal-num">29</span></div>
         <div class="cal-cell"><span class="cal-num">30</span></div>
+        <div class="cal-cell"><span class="cal-num">31</span></div>
+        <div class="cal-cell"><span class="cal-num">32</span></div>
         <div class="cal-cell" style="background:var(--color-surface);"></div>
         <div class="cal-cell" style="background:var(--color-surface);"></div>
       </div>
@@ -84,22 +91,13 @@
     <div class="srv-pad" style="border-left:2px solid var(--color-divider); padding-left:40px;">
       <span class="kick" style="margin-bottom:22px;">Upcoming events</span>
       <div style="border-top:1px solid var(--color-divider); padding:18px 0;">
-        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Cha 08</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">Annual Sports Day</span></div>
-        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">School ground · 8:00 AM · All grades</p>
+        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Ashar 16</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">Portfolio Review Meeting (Grade 1-5)</span></div>
+        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">School Premises</p>
       </div>
       <div style="border-top:1px solid var(--color-divider); padding:18px 0;">
-        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Cha 21</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">Science &amp; Arts Exhibition</span></div>
-        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">Assembly hall · All day · Open to parents</p>
+        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Ashar 26</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">Mock World Cup Final</span></div>
+        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">School Ground · All day · Open to parents</p>
       </div>
-      <div style="border-top:1px solid var(--color-divider); padding:18px 0;">
-        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Cha 26</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">Final-Term Examinations</span></div>
-        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">All grades · Routine on the notice board</p>
-      </div>
-      <div style="border-top:1px solid var(--color-divider); border-bottom:1px solid var(--color-divider); padding:18px 0;">
-        <div style="display:flex; gap:16px; align-items:baseline;"><span class="disp" style="font-size:15px; color:var(--color-accent); flex:0 0 78px;">Bai 01</span><span style="font-size:16px; font-family:var(--font-heading); font-weight:800;">New Session Begins</span></div>
-        <p style="font-size:13px; margin:8px 0 0 94px; color:color-mix(in srgb,var(--color-text) 66%,transparent);">All grades · 10:00 AM</p>
-      </div>
-    </div>
   </section>
 
   <dc-import name="SiteFooter" hint-size="100%,300px"></dc-import>
